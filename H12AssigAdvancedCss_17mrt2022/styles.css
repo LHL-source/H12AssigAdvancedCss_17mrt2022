@@ -1,0 +1,425 @@
+/*variabel gebruikt bij opdr 1 class=name */
+/*@import is gebruikt bij opdr1 class=text*/
+/* opdracht1 Testimonial*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 1.9rem 1.9rem 0rem 0rem;
+}
+
+.body {
+  color: black;
+  background-color: #c3cfe2;
+}
+
+.wrapper-grid {
+  display: grid;
+  overflow: hidden;
+}
+
+.container {
+  width: clamp(150px, 100%, 400px);
+  box-shadow: 0px 2px 8px 0px;
+  text-align: center;
+  border-radius: 1.9rem 1.9rem 1.9rem 1.9rem;
+  position: relative;
+  overflow-wrap: break-word;
+  background-color: #fff;
+}
+
+.text {
+  background-color: #fff;
+  height: 10rem;
+  width: 100%;
+  color: black;
+  border: 1px;
+  padding: 30px;
+}
+
+.profile {
+  position: relative;
+  width: 6rem;
+  border-radius: 50%;
+  margin-bottom: -2.5rem;
+  border: 3px solid #fff;
+  background-color: whitesmoke;
+}
+
+.name {
+  border: 1px;
+  padding: 5px;
+  font-size: 0.75rem;
+  color: #fff;
+  background-color: #686de0;
+}
+
+.webnaam {
+  font-size: 0.5 rem;
+  margin: 1rem 2rem;
+  color: #c0c1ee;
+  background-color: #686de0;
+}
+
+.under {
+  height: 10rem;
+  width: auto;
+  background-color: #686de0;
+  padding: 30px;
+  border-radius: 0rem 0rem 1.9rem 1.9rem;
+}
+
+/*opdracht2: 7 foto's responsive werkt ? ja, opacity in box werkt? y*/
+.body {
+  background-color: #c3cfe2;
+  padding: 10px;
+  border-radius: 1.9rem 1.9rem 1.9rem 1.9rem;
+  /*new works ? no*/
+}
+
+.gridcontainer {
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+  border-radius: 1.9rem 1.9rem 1.9rem 1.9rem;
+  /*new works ?no*/
+}
+
+.boxone {
+  border-radius: 1.9rem 1.9rem 1.9rem 1.9rem;
+  /*new works? no*/
+  position: relative;
+}
+.boxone .middle {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+}
+.boxone .middle:hover {
+  opacity: 1;
+}
+.boxone .text {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32;
+  width: 100%;
+  height: 100%;
+}
+.boxone .butreadmore {
+  width: 25%;
+  height: 15%;
+  background-color: whitesmoke;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.boxtwo {
+  position: relative;
+}
+.boxtwo .middletwo {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+}
+.boxtwo .middletwo:hover {
+  opacity: 1;
+}
+.boxtwo .texttwo {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32;
+  width: 100%;
+  height: 100%;
+}
+.boxtwo .butreadmoretwo {
+  width: 25%;
+  height: 15%;
+  background-color: whitesmoke;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.boxthree {
+  position: relative;
+}
+.boxthree .middlethree {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+}
+.boxthree .middlethree:hover {
+  opacity: 1;
+}
+.boxthree .textthree {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32;
+  width: 100%;
+  height: 100%;
+}
+.boxthree .butreadmorethree {
+  width: 25%;
+  height: 15%;
+  background-color: whitesmoke;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.boxfour {
+  position: relative;
+}
+.boxfour .middlefour {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+}
+.boxfour .middlefour:hover {
+  opacity: 1;
+}
+.boxfour .textfour {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32;
+  width: 100%;
+  height: 100%;
+}
+.boxfour .butreadmorefour {
+  width: 25%;
+  height: 15%;
+  background-color: whitesmoke;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.boxfive {
+  position: relative;
+}
+.boxfive .middlefive {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+}
+.boxfive .middlefive:hover {
+  opacity: 1;
+}
+.boxfive .textfive {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32;
+  width: 100%;
+  height: 100%;
+}
+.boxfive .butreadmorefive {
+  width: 25%;
+  height: 15%;
+  background-color: whitesmoke;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.boxsix {
+  position: relative;
+}
+.boxsix .middlesix {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+}
+.boxsix .middlesix:hover {
+  opacity: 1;
+}
+.boxsix .textsix {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32;
+  width: 100%;
+  height: 100%;
+}
+.boxsix .butreadmoresix {
+  width: 25%;
+  height: 15%;
+  background-color: whitesmoke;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+.boxseven {
+  position: relative;
+}
+.boxseven .middleseven {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+}
+.boxseven .middleseven:hover {
+  opacity: 1;
+}
+.boxseven .textseven {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32;
+  width: 100%;
+  height: 100%;
+}
+.boxseven .butreadmoreseven {
+  width: 25%;
+  height: 15%;
+  background-color: whitesmoke;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border-radius: 0rem 0rem 0rem 0rem;
+}
+
+/*imageone is new */
+.imageone {
+  border-radius: 1.9rem 1.9rem 1.9rem 1.9rem;
+}
+
+@media (min-width: 320px) {
+  .gridcontainer {
+    grid-template-columns: repeat(1 1fr);
+  }
+
+  .body {
+    background-color: #c3cfe2;
+  }
+}
+@media (min-width: 768px) {
+  .gridcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .body {
+    background-color: #c3cfe2;
+  }
+}
+@media (min-width: 1024px) {
+  .gridcontainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .body {
+    background-color: #c3cfe2;
+  }
+}
+/*opdracht 3:Social Media Button*/
+body {
+  background-color: #c3cfe2;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.mediabuttons {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 600px;
+}
+.mediabuttons li {
+  margin: 0px;
+  padding: 10px;
+  border-radius: 0rem 0rem 0rem 0rem;
+  width: 320px;
+  display: grid;
+  grid-template-columns: 100px 220px;
+  transform: translateX(270px);
+  transition: transform 2000ms;
+}
+.mediabuttons li img {
+  height: 40px;
+}
+.mediabuttons li a {
+  text-decoration: underline;
+  color: white;
+  font-size: 22px;
+}
+.mediabuttons li:hover {
+  transform: translatex(0px);
+}
+.mediabuttons .buttons_blog {
+  background-color: #e17b77;
+}
+.mediabuttons .buttons_blog--link {
+  background-color: #e17b77;
+}
+.mediabuttons .buttons_twitter {
+  background-color: #00aced;
+}
+.mediabuttons .buttons_twitter--link {
+  background-color: #00aced;
+}
+.mediabuttons .buttons_linkedin {
+  background-color: #007bb6;
+}
+.mediabuttons .buttons_linkedin--link {
+  background-color: #007bb6;
+}
+.mediabuttons .buttons_facebook {
+  background-color: #3b5998;
+}
+.mediabuttons .buttons_facebook--link {
+  background-color: #3b5998;
+}
+.mediabuttons .buttons_github {
+  background-color: #333333;
+}
+.mediabuttons .buttons_github--link {
+  background-color: #333333;
+}/*# sourceMappingURL=styles.css.map */
