@@ -16,10 +16,6 @@ $primaryBgColor: #fff;
   background-color: #c3cfe2;
 }
 
-.wrapper-grid {
-  display: grid;
-  overflow: hidden;
-}
 
 .container {
   /*width: clamp(150px, 100%, 400px);*/
@@ -70,17 +66,17 @@ $primaryBgColor: #fff;
 }
 
 .under {
-  // height: 10rem;
-  // width: auto;
+ 
   background-color: #686de0;
   padding: 30px;
   border-radius: 0rem 0rem 1.9rem 1.9rem;
 
   /*new 22mrt*/
-  position: absolute;
-  width: 300px;
-  height: 125px;
-  margin-bottom: 0 rem;
+  position: relative;
+  width: 100%;/*300px*/
+  height: 30%;/*125px*/
+  bottom: 0px;
+  right: 0px;
 }
 
 /*opdracht2: 7 foto's responsive werkt ? ja, opacity in box werkt? y*/
@@ -391,25 +387,25 @@ body {
   height: 600px;
 
   li {
-    margin: 0px;
-    padding: 10px;
-    border-radius: 0rem 0rem 0rem 0rem;
-    width: 320px;
-    display: grid;
-    grid-template-columns: 100px 220px;
-    transform: translateX(270px);
-    transition: transform 2000ms;
+      margin: 0px;
+      padding: 10px;
+      border-radius: 0rem 0rem 0rem 0rem;
+      width: 320px;
+      display: grid;
+      grid-template-columns: 100px 220px;
+      transform: translateX(270px);
+      transition: transform 1000ms;/*2000ms*/
 
-    img {
-      height: 40px;
-    }
+      img {
+        height: 40px;
+      }
 
-    a {
-      text-decoration: underline;
-      color: white;
-      font-size: 22px;
-    }
-  }
+      a {
+        text-decoration: underline;
+        color: white;
+        font-size: 22px;
+      }
+  }/*li*/
 
   li:hover {
     transform: translatex(0px);
@@ -421,6 +417,8 @@ body {
 
   .buttons_blog--link {
     background-color: #e17b77;
+    text-align: center;/*new 22mrt*/
+//}
   }
 
   .buttons_twitter {
@@ -429,14 +427,17 @@ body {
 
   .buttons_twitter--link {
     background-color: #00aced;
+    text-align: center;/*new 22mrt*/
   }
 
   .buttons_linkedin {
     background-color: #007bb6;
+    
   }
 
   .buttons_linkedin--link {
     background-color: #007bb6;
+    text-align: center;/*new 22mrt*/
   }
 
   .buttons_facebook {
@@ -445,6 +446,7 @@ body {
 
   .buttons_facebook--link {
     background-color: #3b5998;
+    text-align: center;/*new 22mrt*/
   }
 
   .buttons_github {
@@ -453,5 +455,6 @@ body {
 
   .buttons_github--link {
     background-color: #333333;
+    text-align: center;/*new 22mrt*/
   }
 }
