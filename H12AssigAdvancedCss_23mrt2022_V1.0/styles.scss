@@ -1,0 +1,254 @@
+/*variabel gebruikt bij opdr 1 class=foto */
+$primaryBgColor: #fff;
+/*@import is gebruikt bij opdr1 class=bovenkant_tekst*/
+@import "variables";
+
+/* opdracht1 Testimonial*/
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #c3cfe2;
+}
+
+.container {
+  max-width: 500px;
+  padding: 0px;
+  margin: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px 2px grey;
+}
+
+.bovenkant {
+  background-color: #ffffff;
+  padding: 30px 100px 50px 100px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.bovenkant_tekst {
+  font-size: 20px;
+  color: $secundaryBgColor;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: -5.75rem;
+  border: 4px solid $primaryBgColor;
+  background-color: whitesmoke;
+}
+
+.onderkant {
+  background-color: #5e63f3;
+  padding: 40 px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.naam {
+  color: #ffffff;
+  font-size: 25px;
+}
+.website {
+  color: #cfcfe6;
+}
+
+
+/*opdracht2: 7 foto's responsive werkt ? ja, opacity in box werkt? y*/
+
+.body {
+  background-color: #c3cfe2;
+  padding: 10px;
+  border-radius: 1.9rem 1.9rem 1.9rem 1.9rem; /*new works ? no*/
+}
+.gridcontainer {
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+  border-radius: 1.9rem 1.9rem 1.9rem 1.9rem; /*new works ?no*/
+}
+
+.box {
+ 
+  border-radius: 1.9rem 1.9rem 1.9rem 1.9rem; /*new works? no*/
+  position: relative;
+  /*vervagen*/
+  .middle {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    top: 0px;
+    position: absolute;
+    text-align: center;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  /*groen vlak*/
+  .text {
+    background-color: darkslategrey;
+    color: white;
+    font-size: 16px;
+    padding: 16 32px;
+    width:100%;
+    height: 100%;
+    border-radius: 1.9rem 1.9rem 1.9rem 1.9rem;
+  }
+
+  .butreadmore {
+    width: 25%;
+    height: 15%;
+    background-color: whitesmoke;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    border-radius: 0rem 0rem 0rem 0rem;
+  }
+}
+
+/*imageis new */
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.9rem 1.9rem 1.9rem 1.9rem;
+}
+
+@media (min-width: 400px) {
+  .gridcontainer {
+    grid-template-columns: repeat(1 1fr);
+  }
+  .body {
+    background-color: #c3cfe2;
+  }
+}
+
+@media (min-width: 800px) {
+  .gridcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .body {
+    background-color: #c3cfe2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gridcontainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body {
+    background-color: #c3cfe2;
+  }
+}
+
+
+
+  
+
+
+
+
+
+
+/*opdracht 3:Social Media Button*/
+
+body {
+  background-color: #c3cfe2;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.mediabuttons {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  height: 600px;
+
+  li {
+    margin: 0px;
+    padding: 10px;
+    border-radius: 0rem 0rem 0rem 0rem;
+    width: 320px;
+    display: grid;
+    grid-template-columns: 100px 220px;
+    transform: translateX(270px);
+    transition: transform 1000ms; /*2000ms*/
+
+    img {
+      height: 40px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: white;
+      font-size: 22px;
+    }
+  } /*li*/
+
+  li:hover {
+    transform: translatex(0px);
+  }
+
+  .buttons_blog {
+    background-color: #e17b77;
+  }
+
+  .buttons_blog--link {
+    background-color: #e17b77;
+    text-align: center; /*new 22mrt*/
+    //}
+  }
+
+  .buttons_twitter {
+    background-color: #00aced;
+  }
+
+  .buttons_twitter--link {
+    background-color: #00aced;
+    text-align: center; /*new 22mrt*/
+  }
+
+  .buttons_linkedin {
+    background-color: #007bb6;
+  }
+
+  .buttons_linkedin--link {
+    background-color: #007bb6;
+    text-align: center; /*new 22mrt*/
+  }
+
+  .buttons_facebook {
+    background-color: #3b5998;
+  }
+
+  .buttons_facebook--link {
+    background-color: #3b5998;
+    text-align: center; /*new 22mrt*/
+  }
+
+  .buttons_github {
+    background-color: #333333;
+  }
+
+  .buttons_github--link {
+    background-color: #333333;
+    text-align: center; /*new 22mrt*/
+  }
+}
